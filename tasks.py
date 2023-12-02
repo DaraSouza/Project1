@@ -16,10 +16,9 @@ random_number = random.randint(1, 20)
 guess = 0
 
 
-guess = int(input("Guess the number (between 1, 20): "))
-if guess < random_number:
-    print("Too low! Please try again")
-elif guess > random_number:
+while guess != random_number:
+    guess = int(input("Guess the number (between 1, 20): "))
+if guess > random_number:
     print("Too high! Please try again")
 else:
     print("You guessed the right number. I'm very proud of you!")
@@ -27,13 +26,9 @@ else:
     
 
 password = "wintery123"
+user_input = input("Enter the password: ")
+while guess == password:
+    print("Yay!! You guessed the password.")
 
-while True
-while password != 8:
-    print("Try again please")
-if guess > 8:
-    print("Your number is too high, try again.")
-elif guess < 8:
-    print("Your guess is too low, try again.")
-else: 
-    print("You guessed the password, you have unlocked a gold chest.")
+if guess != password:
+    print("Are you breaking in?! I got my eyes on you.")
